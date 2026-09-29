@@ -1,12 +1,11 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   Sun,
   Leaf,
   ArrowRight,
   Star,
-  ChevronDown,
   Zap,
   Home,
   DollarSign,
@@ -17,7 +16,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Quote,
   BarChart3,
   Calculator,
 } from "lucide-react";
@@ -238,7 +236,7 @@ function SavingsEstimator() {
                 </div>
                 <Slider
                   value={[bill]}
-                  onValueChange={([v]) => setBill(v)}
+                  onValueChange={(v: number[]) => setBill(v[0])}
                   min={50}
                   max={500}
                   step={10}
@@ -257,7 +255,7 @@ function SavingsEstimator() {
                 </div>
                 <Slider
                   value={[roofSize]}
-                  onValueChange={([v]) => setRoofSize(v)}
+                  onValueChange={(v: number[]) => setRoofSize(v[0])}
                   min={200}
                   max={2000}
                   step={50}
@@ -271,7 +269,7 @@ function SavingsEstimator() {
               {/* Sun exposure */}
               <div className="space-y-2">
                 <Label>Sun Exposure</Label>
-                <Select value={location} onValueChange={setLocation}>
+                <Select value={location} onValueChange={(v) => v && setLocation(v)}>
                   <SelectTrigger>
                     <SelectValue placeholder="Select sun exposure" />
                   </SelectTrigger>
@@ -801,7 +799,7 @@ function ContactForm() {
                     </div>
                     <div className="space-y-1.5">
                       <Label htmlFor="roof">Roof Type</Label>
-                      <Select value={roofType} onValueChange={setRoofType}>
+                      <Select value={roofType} onValueChange={(v) => v && setRoofType(v)}>
                         <SelectTrigger id="roof">
                           <SelectValue placeholder="Select..." />
                         </SelectTrigger>
