@@ -236,7 +236,7 @@ function SavingsEstimator() {
                 </div>
                 <Slider
                   value={[bill]}
-                  onValueChange={(v: number[]) => setBill(v[0])}
+                  onValueChange={(value) => setBill(Array.isArray(value) ? value[0] : value)}
                   min={50}
                   max={500}
                   step={10}
@@ -255,7 +255,7 @@ function SavingsEstimator() {
                 </div>
                 <Slider
                   value={[roofSize]}
-                  onValueChange={(v: number[]) => setRoofSize(v[0])}
+                  onValueChange={(value) => setRoofSize(Array.isArray(value) ? value[0] : value)}
                   min={200}
                   max={2000}
                   step={50}
