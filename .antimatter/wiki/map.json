@@ -1,21 +1,103 @@
 {
-  "root": "/tmp/am-ws/ch_mkt_greenloope_eda4e",
-  "name": "ch_mkt_greenloope_eda4e",
-  "generatedAt": "2026-09-29T23:10:03.474Z",
-  "fileCount": 1,
-  "dirCount": 1,
+  "root": "/tmp/am-ws/c-1790732966145-52kez",
+  "name": "c-1790732966145-52kez",
+  "generatedAt": "2026-09-30T17:39:36.539Z",
+  "fileCount": 37,
+  "dirCount": 6,
   "languages": {
-    "Markdown": 1
+    "Markdown": 8,
+    "JSON": 6,
+    "JavaScript": 2,
+    "TypeScript": 13,
+    "CSS": 1
   },
   "keyFiles": [
-    "README.md"
+    "package.json",
+    "README.md",
+    "tsconfig.json"
   ],
   "directories": [
     {
+      "dir": ".antimatter/wiki",
+      "fileCount": 6,
+      "files": [
+        "index.md",
+        "log.md",
+        "map.json",
+        "map.md",
+        "overview.md",
+        "schema.md"
+      ],
+      "symbols": []
+    },
+    {
       "dir": "(root)",
+      "fileCount": 12,
+      "files": [
+        ".gitignore",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "components.json",
+        "eslint.config.mjs",
+        "next.config.ts",
+        "package-lock.json",
+        "package.json",
+        "postcss.config.mjs",
+        "README.md",
+        "tsconfig.json",
+        "vercel.json"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "public",
+      "fileCount": 5,
+      "files": [
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "vercel.svg",
+        "window.svg"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/app",
+      "fileCount": 4,
+      "files": [
+        "favicon.ico",
+        "globals.css",
+        "layout.tsx",
+        "page.tsx"
+      ],
+      "symbols": [
+        {
+          "name": "metadata",
+          "kind": "const"
+        }
+      ]
+    },
+    {
+      "dir": "src/components/ui",
+      "fileCount": 9,
+      "files": [
+        "badge.tsx",
+        "button.tsx",
+        "card.tsx",
+        "input.tsx",
+        "label.tsx",
+        "select.tsx",
+        "slider.tsx",
+        "tabs.tsx",
+        "textarea.tsx"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/lib",
       "fileCount": 1,
       "files": [
-        "README.md"
+        "utils.ts"
       ],
       "symbols": []
     }
