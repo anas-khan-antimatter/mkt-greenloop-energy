@@ -1,20 +1,35 @@
 {
-  "root": "/tmp/am-ws/ch_mkt_greenloope_eda4e",
-  "name": "ch_mkt_greenloope_eda4e",
-  "generatedAt": "2026-09-29T23:10:03.474Z",
-  "fileCount": 1,
-  "dirCount": 1,
+  "root": "/tmp/am-ws/c-1790732966145-52kez",
+  "name": "c-1790732966145-52kez",
+  "generatedAt": "2026-09-30T16:43:05.267Z",
+  "fileCount": 8,
+  "dirCount": 2,
   "languages": {
-    "Markdown": 1
+    "Markdown": 6,
+    "JSON": 1
   },
   "keyFiles": [
     "README.md"
   ],
   "directories": [
     {
-      "dir": "(root)",
-      "fileCount": 1,
+      "dir": ".antimatter/wiki",
+      "fileCount": 6,
       "files": [
+        "index.md",
+        "log.md",
+        "map.json",
+        "map.md",
+        "overview.md",
+        "schema.md"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "(root)",
+      "fileCount": 2,
+      "files": [
+        ".gitignore",
         "README.md"
       ],
       "symbols": []
