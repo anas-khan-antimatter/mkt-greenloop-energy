@@ -1,0 +1,24 @@
+{
+  "root": "/tmp/am-ws/c-1790732966145-52kez",
+  "name": "c-1790732966145-52kez",
+  "generatedAt": "2026-09-30T14:43:04.564Z",
+  "fileCount": 2,
+  "dirCount": 1,
+  "languages": {
+    "Markdown": 1
+  },
+  "keyFiles": [
+    "README.md"
+  ],
+  "directories": [
+    {
+      "dir": "(root)",
+      "fileCount": 2,
+      "files": [
+        ".gitignore",
+        "README.md"
+      ],
+      "symbols": []
+    }
+  ]
+}
