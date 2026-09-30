@@ -43,14 +43,6 @@ export async function POST(request: NextRequest) {
       message: `Thanks, ${name}! We'll send your personalized solar proposal to ${email} within 24 hours.`,
     };
 
-    // If OPENAI_API_KEY exists, we could use it for enrichment,
-    // but deterministic fallback is sufficient here.
-    const openAiKey = process.env.OPENAI_API_KEY;
-    if (openAiKey) {
-      // AI enrichment would go here — for now we use high-quality deterministic math
-      leadData.estimate.note = "Enhanced with AI analysis";
-    }
-
     return NextResponse.json(leadData, { status: 201 });
   } catch (err) {
     return NextResponse.json(
