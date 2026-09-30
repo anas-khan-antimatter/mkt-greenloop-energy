@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import {
-  Sun, Leaf, ArrowRight, DollarSign, Home, BarChart3, TrendingDown,
-  Phone, Mail, MapPin, Menu, X, Calculator, Zap,
+  Sun, Leaf, ArrowRight, DollarSign, Home, BarChart3,
+  Phone, Mail, MapPin, Menu, X, Calculator, Zap, TrendingDown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
