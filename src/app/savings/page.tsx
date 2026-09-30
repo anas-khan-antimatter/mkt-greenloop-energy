@@ -116,7 +116,7 @@ function calculateSavings(
 }
 
 // ─── Results chart mini ────────────────────────────────────────
-function MiniSavingsChart(year: number, paybackYears: number) {
+function MiniSavingsChart({ year, paybackYears }: { year: number; paybackYears: number }) {
   const data = Array.from({ length: 10 }, (_, i) => {
     const y = i + 1;
     return { year: y, cumulative: Math.round(year * y) };
@@ -132,7 +132,7 @@ function MiniSavingsChart(year: number, paybackYears: number) {
             <div
               className={`w-full rounded-t-sm ${isPayback ? "bg-primary" : "bg-primary/40"}`}
               style={{ height: `${h}%` }}
-              title={`Year ${d.year}: $${d.cumulative.toLocaleString()}`}
+              title={`Year ${d.year}: ${d.cumulative.toLocaleString()}`}
             />
             <span className="text-[0.55rem] text-muted-foreground hidden md:block">{d.year}</span>
           </div>
@@ -406,7 +406,7 @@ export default function SavingsPage() {
                       {/* Mini chart */}
                       <div className="p-3 rounded-lg bg-white/40 border border-border/40">
                         <p className="text-xs text-muted-foreground font-semibold mb-1">Cumulative Savings (10 yr)</p>
-                        <MiniSavingsChart(result.yearlySavings, result.paybackYears) />
+                        <MiniSavingsChart year={result.yearlySavings} paybackYears={result.paybackYears} />
                         <div className="flex items-center gap-2 mt-2">
                           <span className="w-3 h-3 rounded-sm bg-primary/40" />
                           <span className="text-[0.6rem] text-muted-foreground">Pre payback</span>
