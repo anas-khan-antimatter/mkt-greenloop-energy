@@ -1,14 +1,14 @@
 {
   "root": "/tmp/am-ws/c-1790732966145-52kez",
   "name": "c-1790732966145-52kez",
-  "generatedAt": "2026-09-30T17:39:36.539Z",
-  "fileCount": 37,
-  "dirCount": 6,
+  "generatedAt": "2026-10-02T22:11:23.420Z",
+  "fileCount": 45,
+  "dirCount": 13,
   "languages": {
-    "Markdown": 8,
+    "Markdown": 9,
     "JSON": 6,
     "JavaScript": 2,
-    "TypeScript": 13,
+    "TypeScript": 20,
     "CSS": 1
   },
   "keyFiles": [
@@ -32,7 +32,7 @@
     },
     {
       "dir": "(root)",
-      "fileCount": 12,
+      "fileCount": 13,
       "files": [
         ".gitignore",
         "AGENTS.md",
@@ -42,6 +42,7 @@
         "next.config.ts",
         "package-lock.json",
         "package.json",
+        "PLAN.md",
         "postcss.config.mjs",
         "README.md",
         "tsconfig.json",
@@ -76,6 +77,80 @@
           "kind": "const"
         }
       ]
+    },
+    {
+      "dir": "src/app/api/estimate",
+      "fileCount": 1,
+      "files": [
+        "route.ts"
+      ],
+      "symbols": [
+        {
+          "name": "POST",
+          "kind": "fn"
+        },
+        {
+          "name": "GET",
+          "kind": "fn"
+        }
+      ]
+    },
+    {
+      "dir": "src/app/api/leads",
+      "fileCount": 1,
+      "files": [
+        "route.ts"
+      ],
+      "symbols": [
+        {
+          "name": "POST",
+          "kind": "fn"
+        },
+        {
+          "name": "GET",
+          "kind": "fn"
+        }
+      ]
+    },
+    {
+      "dir": "src/app/chart",
+      "fileCount": 1,
+      "files": [
+        "page.tsx"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/app/faq",
+      "fileCount": 1,
+      "files": [
+        "page.tsx"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/app/install",
+      "fileCount": 1,
+      "files": [
+        "page.tsx"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/app/lead",
+      "fileCount": 1,
+      "files": [
+        "page.tsx"
+      ],
+      "symbols": []
+    },
+    {
+      "dir": "src/app/savings",
+      "fileCount": 1,
+      "files": [
+        "page.tsx"
+      ],
+      "symbols": []
     },
     {
       "dir": "src/components/ui",
